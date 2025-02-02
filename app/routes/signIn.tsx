@@ -115,7 +115,7 @@ function RouteComponent() {
                 )}
               />
               <Button type="submit" className="w-full h-9">
-                Sign Up
+                Sign In
               </Button>
             </form>
           </Form>
