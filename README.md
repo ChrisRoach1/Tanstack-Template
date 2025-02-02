@@ -5,8 +5,8 @@ I wanted to throw together a small template for tanstack start to scaffold up pr
 - Tanstack Start
 - Tailwind
 - [Shadcn](https://ui.shadcn.com/docs)
-- [Drizzle]("https://orm.drizzle.team/docs/get-started")
-- [Better Auth]("https://www.better-auth.com/docs/introduction")
+- [Drizzle](https://orm.drizzle.team/docs/get-started)
+- [Better Auth](https://www.better-auth.com/docs/introduction)
 
 ## Clone the repo
 
