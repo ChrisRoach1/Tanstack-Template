@@ -28,7 +28,7 @@ function RouteComponent() {
     },
   })
 
-  const navigate = useNavigate() // Get the navigate function
+  const navigate = useNavigate() 
   const { toast } = useToast()
 
   const signIn = async (values: z.infer<typeof signInSchema>) => {

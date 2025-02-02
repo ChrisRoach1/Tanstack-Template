@@ -1,5 +1,5 @@
 import { authClient } from "@/lib/auth-client"; //import the auth client
-import { createFileRoute, redirect } from "@tanstack/react-router";
+import { createFileRoute, redirect, useNavigate } from "@tanstack/react-router";
 import { Input } from "~/components/ui/input";
 import { Button } from "~/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
@@ -28,6 +28,7 @@ export const Route = createFileRoute("/signUp")({
 
 function RouteComponent() {
   const { toast } = useToast()
+  const navigate = useNavigate() 
 
   const form = useForm<z.infer<typeof signUpSchema>>({
     resolver: zodResolver(signUpSchema),
@@ -56,9 +57,8 @@ function RouteComponent() {
         },
         onSuccess: (ctx) => {
           console.log("sign up success");
-          redirect({
-            to: "/"
-          });
+          navigate({ to: '/' })
+
         },
         onError: (ctx) => {
           toast({
