@@ -1,3 +1,70 @@
+# Tanstack Start Template with Drizzle and Better Auth
+
+I wanted to throw together a small template for tanstack start to scaffold up projects quicker. The template includes:
+
+- Tanstack Start
+- Tailwind
+- [Shadcn](https://ui.shadcn.com/docs)
+- [Drizzle]("https://orm.drizzle.team/docs/get-started")
+- [Better Auth]("https://www.better-auth.com/docs/introduction")
+
+## Clone the repo
+
+You can run the below command to better pull down the repo and get started:
+
+```
+npx degit https://github.com/ChrisRoach1/Tanstack-Template start-basic
+```
+
+
+## Run the project
+
+First run: 
+```
+npm install
+```
+
+To get up and running you'll need to create a .env file using the example file provided.
+Fill out the variables to get started.
+
+Once you have your database connection up and running we'll want to run the following command to migrate our auth tables:
+
+```
+npx drizzle-kit push
+```
+
+You can refer to the docs above if you need a better migration strategy.
+
+
+Last run:
+
+```
+npm run dev
+```
+
+and that should be all you need to get up and running!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Welcome to TanStack.com!
 
 This site is built with TanStack Router!
